@@ -1,0 +1,29 @@
+<% unless @submission.errors.empty? %>
+    <p class="form-errors">
+      <%= pluralize(@submission.errors.count, "error") %> prohibited this from being submitted:
+      <% @submission.errors.full_messages.each do |error| %>
+        <br><small>
+          <%= error %>
+        </small>
+      <% end %>
+    </p>
+  <% end %>
+<%= form_for @submission, url: submit_contact_form_path, method: :post do |f| %>
+  <div class="row inputs">
+    <div class="input">
+      <%= f.text_field :first_name, placeholder: "First Name" %>
+    </div>
+    <div class="input">
+      <%= f.text_field :last_name, placeholder: "Last Name" %>
+    </div>
+  </div>
+  <div class="row inputs">
+    <div class="input">
+      <%= f.text_field :email, placeholder: "E-mail" %>
+    </div>
+  </div>
+  <div class="row textarea">
+    <%= f.text_area :message, rows: 8, cols: 40, placeholder: "Your Message" %>
+    <%= f.submit "Send Message" %>
+  </div>
+<% end %>

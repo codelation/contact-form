@@ -1,0 +1,19 @@
+<h1>New Message</h1>
+
+<h5>From: <%= "#{@submission.first_name} #{@submission.last_name}" %></h5>
+<h5>Message</h5>
+<p>
+  <%= @submission.message %>
+</p>
+
+<%= "#{@submission.first_name} #{@submission.last_name}" %>
+<br>
+<%= @submission.email %>
+<% unless @submission.phone_number.to_s.blank? %>
+<br>
+<%= @submission.phone_number %>
+<% end %>
+<% unless @submission.additional.to_s.blank? %>
+<br>
+<%= @submission.additional %>
+<% end %>
