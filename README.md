@@ -1,8 +1,6 @@
-# Blogelator
+# Contact Form
 
-[![Code Climate](https://codeclimate.com/github/codelation/blogelator.png)](https://codeclimate.com/github/codelation/blogelator)
-
-Blogelator is a Ruby gem for adding a blog to a Rails project.
+Contact Form is a Ruby gem for adding a contact form to a Rails project.
 
 ## Installation
 
