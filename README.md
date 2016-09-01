@@ -19,7 +19,7 @@ bundle install
 Install the controller, views, and database migrations:
 
 ```bash
-rails g contact-form:install
+rails g contact_form:install
 rake db:migrate
 ```
 
