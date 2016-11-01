@@ -7,7 +7,7 @@ Contact Form is a Ruby gem for adding a contact form to a Rails project.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "contact-form"
+gem "contact-form", github: "codelation/contact-form"
 ```
 
 Install the Contact Form gem with Bundler:
