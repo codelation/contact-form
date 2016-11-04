@@ -23,6 +23,9 @@ rails g contact_form:install
 rake db:migrate
 ```
 
+## Usage
+Be default, the available fields are: `first_name`, `last_name`, `email`, `phone_number`, `additional`, and `message`.  This is ment to be flexible for most situations.  If you do not want to separate first and last names, you could use just `first_name`.  The `additional` field is meant to be used to hold any other information like a company name or organization name.
+
 ## Contributing
 
 1. Fork it
